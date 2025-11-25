@@ -1,0 +1,43 @@
+# Data (regenerable by running the src/ scripts, and can get large)
+data/raw/*
+data/synthetic/*
+data/processed/*
+!data/raw/.gitkeep
+!data/synthetic/.gitkeep
+!data/processed/.gitkeep
+
+# outputs/ (metrics JSON + figures) is intentionally NOT ignored
+outputs/predictions/*
+!outputs/predictions/.gitkeep
+
+# Model checkpoints & heavy tokenizer binaries (pulled via HuggingFace Hub)
+*.pt
+*.pth
+*.bin
+*.safetensors
+*tokenizer.json
+checkpoints/
+models/*/pytorch_model*
+runs/
+
+# HF / torch caches
+.cache/
+*.lock
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+*.egg-info/
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Secrets
+.env

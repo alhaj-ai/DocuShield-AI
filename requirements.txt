@@ -1,0 +1,25 @@
+# Incremental packages only — torch/torchvision/numpy/pandas/scikit-learn/
+# matplotlib/seaborn/pillow are already present in the `project1` conda env.
+
+# Hugging Face stack
+transformers>=4.44
+datasets>=2.20
+tokenizers>=0.19
+sentencepiece
+accelerate>=0.33
+evaluate
+seqeval
+
+# Problem 1: OCR + layout
+pytesseract
+pdf2image
+opencv-python-headless
+
+# Problem 3: PERSON detection + synthetic data
+spacy>=3.7
+faker
+reportlab
+
+# Utilities
+pyyaml
+tqdm
