@@ -1,0 +1,2244 @@
+{
+  "failures": [
+    {
+      "doc_id": "test_fr_0023",
+      "language": "fr",
+      "augmented": true,
+      "elapsed_seconds": 0.483755500000143,
+      "field_results": {
+        "lab_name": {
+          "gt": "Clinique du Nord - Laboratoire",
+          "pred": "avenue",
+          "exact_match": false,
+          "similarity": 0.16666666666666666
+        },
+        "lab_address": {
+          "gt": "avenue Anne Gu\u00c3\u00a9rin, 20140 Vasseur",
+          "pred": "Gu\u00e9rin, 20140 Vasseur 0326534520",
+          "exact_match": false,
+          "similarity": 0.6060606060606061
+        },
+        "patient_name": {
+          "gt": "Suzanne Bouchet",
+          "pred": "Bouchet",
+          "exact_match": false,
+          "similarity": 0.6363636363636364
+        },
+        "dob": {
+          "gt": "15/04/2014",
+          "pred": "45/04/2014",
+          "exact_match": false,
+          "similarity": 0.9
+        },
+        "patient_id": {
+          "gt": "PT-171108",
+          "pred": "",
+          "exact_match": false,
+          "similarity": 0.0
+        },
+        "report_date": {
+          "gt": "11/07/2026",
+          "pred": "11/07/2026",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "physician_name": {
+          "gt": "Dr. Gilles Monnier",
+          "pred": "",
+          "exact_match": false,
+          "similarity": 0.0
+        },
+        "physician_id": {
+          "gt": "FR214644955",
+          "pred": "FR214644955",
+          "exact_match": true,
+          "similarity": 1.0
+        }
+      },
+      "row_results": [
+        {
+          "gt": {
+            "test_name": "Glucose",
+            "value": "96",
+            "unit": "mg/dL",
+            "reference_range": "70-100",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "Sodium",
+            "value": "96",
+            "unit": "mg/dL.",
+            "reference_range": "70-100",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": false,
+            "value": true,
+            "unit": false,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "Sodium",
+            "value": "139",
+            "unit": "mmol/L",
+            "reference_range": "135-145",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "Calcium",
+            "value": "139",
+            "unit": "mmol/L.",
+            "reference_range": "135-145",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": false,
+            "value": true,
+            "unit": false,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "Calcium",
+            "value": "10.4",
+            "unit": "mg/dL",
+            "reference_range": "8.5-10.5",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "Uree",
+            "value": "104",
+            "unit": "mg/dL.",
+            "reference_range": "8.5-10.5",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": false,
+            "value": false,
+            "unit": false,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "Uree",
+            "value": "19",
+            "unit": "mg/dL",
+            "reference_range": "7-20",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "Hemoglobine",
+            "value": "19",
+            "unit": "mg/dL",
+            "reference_range": "7-20",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": false,
+            "value": true,
+            "unit": true,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "Hemoglobine",
+            "value": "15.1",
+            "unit": "g/dL",
+            "reference_range": "12-16",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "",
+            "value": "15.1",
+            "unit": "gd",
+            "reference_range": "12-16",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": false,
+            "value": true,
+            "unit": false,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": false
+        }
+      ],
+      "field_accuracy": 0.25,
+      "row_accuracy": 0.0,
+      "cell_accuracy": 0.6,
+      "n_gt_rows": 5,
+      "n_pred_rows": 5
+    },
+    {
+      "doc_id": "test_fr_0035",
+      "language": "fr",
+      "augmented": true,
+      "elapsed_seconds": 0.4730320999999549,
+      "field_results": {
+        "lab_name": {
+          "gt": "Clinique du Nord - Laboratoire",
+          "pred": "76,",
+          "exact_match": false,
+          "similarity": 0.0
+        },
+        "lab_address": {
+          "gt": "76, rue de Baudry, 04973 Gomez",
+          "pred": "Baudry, 04973 Gomez",
+          "exact_match": false,
+          "similarity": 0.7755102040816326
+        },
+        "patient_name": {
+          "gt": "Caroline Martin",
+          "pred": "Martin",
+          "exact_match": false,
+          "similarity": 0.5714285714285714
+        },
+        "dob": {
+          "gt": "02/12/1944",
+          "pred": "92/12/1944",
+          "exact_match": false,
+          "similarity": 0.9
+        },
+        "patient_id": {
+          "gt": "PT-146168",
+          "pred": "",
+          "exact_match": false,
+          "similarity": 0.0
+        },
+        "report_date": {
+          "gt": "11/07/2026",
+          "pred": "11/07/2026",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "physician_name": {
+          "gt": "Dr. Yves de la Diallo",
+          "pred": "Yves",
+          "exact_match": false,
+          "similarity": 0.32
+        },
+        "physician_id": {
+          "gt": "FR269110063",
+          "pred": "FR269110063",
+          "exact_match": true,
+          "similarity": 1.0
+        }
+      },
+      "row_results": [
+        {
+          "gt": {
+            "test_name": "Sodium",
+            "value": "142",
+            "unit": "mmol/L",
+            "reference_range": "135-145",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "Plaquettes",
+            "value": "142",
+            "unit": "mmol/L.",
+            "reference_range": "135-145",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": false,
+            "value": true,
+            "unit": false,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "Plaquettes",
+            "value": "535",
+            "unit": "x10^9/L",
+            "reference_range": "150-400",
+            "flag": "H"
+          },
+          "pred": {
+            "test_name": "Hemoglobine",
+            "value": "535",
+            "unit": "x10\u00b09/L",
+            "reference_range": "150-400",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": false,
+            "value": true,
+            "unit": false,
+            "reference_range": true,
+            "flag": false
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "Hemoglobine",
+            "value": "7.5",
+            "unit": "g/dL",
+            "reference_range": "12-16",
+            "flag": "L"
+          },
+          "pred": {
+            "test_name": "Uree",
+            "value": "7.5",
+            "unit": "gd",
+            "reference_range": "12-16",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": false,
+            "value": true,
+            "unit": false,
+            "reference_range": true,
+            "flag": false
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "Uree",
+            "value": "17",
+            "unit": "mg/dL",
+            "reference_range": "7-20",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "Creatinine",
+            "value": "17",
+            "unit": "mg/dL.",
+            "reference_range": "7-20",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": false,
+            "value": true,
+            "unit": false,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "Creatinine",
+            "value": "0.79",
+            "unit": "mg/dL",
+            "reference_range": "0.6-1.3",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "",
+            "value": "0.79",
+            "unit": "mg/dL",
+            "reference_range": "0.6-1.3",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": false,
+            "value": true,
+            "unit": true,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": false
+        }
+      ],
+      "field_accuracy": 0.25,
+      "row_accuracy": 0.0,
+      "cell_accuracy": 0.56,
+      "n_gt_rows": 5,
+      "n_pred_rows": 5
+    },
+    {
+      "doc_id": "test_en_0034",
+      "language": "en",
+      "augmented": true,
+      "elapsed_seconds": 0.5932502000000568,
+      "field_results": {
+        "lab_name": {
+          "gt": "City Health Labs",
+          "pred": "City Health Labs",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "lab_address": {
+          "gt": "013 Jennifer Dam Apt. 582, South Paulfurt, VI 96418",
+          "pred": "Dam Apt. 582, South Paulfurt, VI 96418",
+          "exact_match": false,
+          "similarity": 0.8539325842696629
+        },
+        "patient_name": {
+          "gt": "Matthew Campbell",
+          "pred": "Campbell",
+          "exact_match": false,
+          "similarity": 0.6666666666666666
+        },
+        "dob": {
+          "gt": "04/05/1988",
+          "pred": "04/05/1988",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "patient_id": {
+          "gt": "PT-492393",
+          "pred": "",
+          "exact_match": false,
+          "similarity": 0.0
+        },
+        "report_date": {
+          "gt": "02/08/2026",
+          "pred": "",
+          "exact_match": false,
+          "similarity": 0.0
+        },
+        "physician_name": {
+          "gt": "Dr. Thomas Chambers",
+          "pred": "Chambers",
+          "exact_match": false,
+          "similarity": 0.5925925925925926
+        },
+        "physician_id": {
+          "gt": "MD-27395",
+          "pred": "MD-27395",
+          "exact_match": true,
+          "similarity": 1.0
+        }
+      },
+      "row_results": [
+        {
+          "gt": {
+            "test_name": "Cholesterol Total",
+            "value": "193",
+            "unit": "mg/dL",
+            "reference_range": "125-200",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "",
+            "value": "193",
+            "unit": "mg/d.",
+            "reference_range": "125-200",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": false,
+            "value": true,
+            "unit": false,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "White Blood Cell Count",
+            "value": "2.9",
+            "unit": "x10^9/L",
+            "reference_range": "4-11",
+            "flag": "L"
+          },
+          "pred": {
+            "test_name": "",
+            "value": "29",
+            "unit": "1094",
+            "reference_range": "41",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": false,
+            "value": false,
+            "unit": false,
+            "reference_range": false,
+            "flag": false
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "Platelet Count",
+            "value": "228",
+            "unit": "x10^9/L",
+            "reference_range": "150-400",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "",
+            "value": "228",
+            "unit": "109",
+            "reference_range": "150-400",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": false,
+            "value": true,
+            "unit": false,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "Creatinine",
+            "value": "1.14",
+            "unit": "mg/dL",
+            "reference_range": "0.6-1.3",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "",
+            "value": "1.14",
+            "unit": "mg/dl.",
+            "reference_range": "0613",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": false,
+            "value": true,
+            "unit": false,
+            "reference_range": false,
+            "flag": true
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "Hemoglobin",
+            "value": "20.5",
+            "unit": "g/dL",
+            "reference_range": "12-16",
+            "flag": "H"
+          },
+          "pred": {
+            "test_name": "",
+            "value": "205",
+            "unit": "gd",
+            "reference_range": "12-16",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": false,
+            "value": false,
+            "unit": false,
+            "reference_range": true,
+            "flag": false
+          },
+          "full_row_match": false
+        }
+      ],
+      "field_accuracy": 0.375,
+      "row_accuracy": 0.0,
+      "cell_accuracy": 0.36,
+      "n_gt_rows": 5,
+      "n_pred_rows": 5
+    },
+    {
+      "doc_id": "test_fr_0013",
+      "language": "fr",
+      "augmented": true,
+      "elapsed_seconds": 0.5691857000001619,
+      "field_results": {
+        "lab_name": {
+          "gt": "Centre d'Analyses Medicales Lille",
+          "pred": "Centre d'Analyses Medicales Lille",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "lab_address": {
+          "gt": "43, chemin Jean Deschamps, 84940 BesnardBourg",
+          "pred": "Deschamps, 84940 BesnardBourg",
+          "exact_match": false,
+          "similarity": 0.7837837837837838
+        },
+        "patient_name": {
+          "gt": "Xavier Le Descamps",
+          "pred": "Le Descamps",
+          "exact_match": false,
+          "similarity": 0.7586206896551724
+        },
+        "dob": {
+          "gt": "14/11/1984",
+          "pred": "14/11/1984",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "patient_id": {
+          "gt": "PT-396882",
+          "pred": "",
+          "exact_match": false,
+          "similarity": 0.0
+        },
+        "report_date": {
+          "gt": "21/07/2026",
+          "pred": "21/07/2026",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "physician_name": {
+          "gt": "Dr. Juliette Millet Le Verdier",
+          "pred": "Millet Le Verdier",
+          "exact_match": false,
+          "similarity": 0.723404255319149
+        },
+        "physician_id": {
+          "gt": "FR176100340",
+          "pred": "FR176100340",
+          "exact_match": true,
+          "similarity": 1.0
+        }
+      },
+      "row_results": [
+        {
+          "gt": {
+            "test_name": "Potassium",
+            "value": "3.7",
+            "unit": "mmol/L",
+            "reference_range": "3.5-5.1",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "",
+            "value": "37",
+            "unit": "mmol/L",
+            "reference_range": "3.56.1",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": false,
+            "value": false,
+            "unit": true,
+            "reference_range": false,
+            "flag": true
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "Sodium",
+            "value": "137",
+            "unit": "mmol/L",
+            "reference_range": "135-145",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "Potassium",
+            "value": "137",
+            "unit": "mmol/L",
+            "reference_range": "135-145",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": false,
+            "value": true,
+            "unit": true,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "Leucocytes",
+            "value": "4.7",
+            "unit": "x10^9/L",
+            "reference_range": "4-11",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "Sodium",
+            "value": "47",
+            "unit": "x10\u00b09/L,",
+            "reference_range": "at",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": false,
+            "value": false,
+            "unit": false,
+            "reference_range": false,
+            "flag": true
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "Hemoglobine",
+            "value": "15.3",
+            "unit": "g/dL",
+            "reference_range": "12-16",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "Leucocytes",
+            "value": "153",
+            "unit": "gd",
+            "reference_range": "1246",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": false,
+            "value": false,
+            "unit": false,
+            "reference_range": false,
+            "flag": true
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "Creatinine",
+            "value": "0.97",
+            "unit": "mg/dL",
+            "reference_range": "0.6-1.3",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "Hemoglobine",
+            "value": "0.97",
+            "unit": "mg/dL",
+            "reference_range": "0.613",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": false,
+            "value": true,
+            "unit": true,
+            "reference_range": false,
+            "flag": true
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "Calcium",
+            "value": "9.0",
+            "unit": "mg/dL",
+            "reference_range": "8.5-10.5",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "",
+            "value": "9.0",
+            "unit": "mg/dL",
+            "reference_range": "85-105",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": false,
+            "value": true,
+            "unit": true,
+            "reference_range": false,
+            "flag": true
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "Uree",
+            "value": "15",
+            "unit": "mg/dL",
+            "reference_range": "7-20",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "",
+            "value": "15",
+            "unit": "mgidl",
+            "reference_range": "7-20",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": false,
+            "value": true,
+            "unit": false,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": false
+        }
+      ],
+      "field_accuracy": 0.5,
+      "row_accuracy": 0.0,
+      "cell_accuracy": 0.4857142857142857,
+      "n_gt_rows": 7,
+      "n_pred_rows": 7
+    },
+    {
+      "doc_id": "test_fr_0067",
+      "language": "fr",
+      "augmented": true,
+      "elapsed_seconds": 0.605592500000057,
+      "field_results": {
+        "lab_name": {
+          "gt": "Laboratoire BioSante",
+          "pred": "Laboratoire BioSante",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "lab_address": {
+          "gt": "rue de Gimenez, 81161 JacquesVille",
+          "pred": "81161 JacquesVille",
+          "exact_match": false,
+          "similarity": 0.6923076923076923
+        },
+        "patient_name": {
+          "gt": "Oc\u00c3\u00a9ane Turpin-Barbe",
+          "pred": "Turpin-Barbe",
+          "exact_match": false,
+          "similarity": 0.75
+        },
+        "dob": {
+          "gt": "25/10/2020",
+          "pred": "25/10/2020",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "patient_id": {
+          "gt": "PT-255132",
+          "pred": "",
+          "exact_match": false,
+          "similarity": 0.0
+        },
+        "report_date": {
+          "gt": "05/08/2026",
+          "pred": "05/08/2026",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "physician_name": {
+          "gt": "Dr. Marianne Gillet",
+          "pred": "Gillet",
+          "exact_match": false,
+          "similarity": 0.48
+        },
+        "physician_id": {
+          "gt": "FR460150990",
+          "pred": "FR460150990",
+          "exact_match": true,
+          "similarity": 1.0
+        }
+      },
+      "row_results": [
+        {
+          "gt": {
+            "test_name": "Sodium",
+            "value": "144",
+            "unit": "mmol/L",
+            "reference_range": "135-145",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "",
+            "value": "144",
+            "unit": "mmol/L.",
+            "reference_range": "136-145",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": false,
+            "value": true,
+            "unit": false,
+            "reference_range": false,
+            "flag": true
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "Potassium",
+            "value": "6.4",
+            "unit": "mmol/L",
+            "reference_range": "3.5-5.1",
+            "flag": "H"
+          },
+          "pred": {
+            "test_name": "Sodium",
+            "value": "64",
+            "unit": "mmol/L.",
+            "reference_range": "3.551",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": false,
+            "value": false,
+            "unit": false,
+            "reference_range": false,
+            "flag": false
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "Calcium",
+            "value": "10.1",
+            "unit": "mg/dL",
+            "reference_range": "8.5-10.5",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "Potassium",
+            "value": "101",
+            "unit": "mg/dL.",
+            "reference_range": "8.5-10.5",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": false,
+            "value": false,
+            "unit": false,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "Hemoglobine",
+            "value": "15.2",
+            "unit": "g/dL",
+            "reference_range": "12-16",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "Calcium",
+            "value": "152",
+            "unit": "gdL",
+            "reference_range": "12-16",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": false,
+            "value": false,
+            "unit": false,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "Glucose",
+            "value": "83",
+            "unit": "mg/dL",
+            "reference_range": "70-100",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "Hemoglobine",
+            "value": "83",
+            "unit": "mg/dL.",
+            "reference_range": "70-100",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": false,
+            "value": true,
+            "unit": false,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "Plaquettes",
+            "value": "185",
+            "unit": "x10^9/L",
+            "reference_range": "150-400",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "",
+            "value": "185",
+            "unit": "x10\u00b09/L",
+            "reference_range": "150-400",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": false,
+            "value": true,
+            "unit": false,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "Creatinine",
+            "value": "0.66",
+            "unit": "mg/dL",
+            "reference_range": "0.6-1.3",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "",
+            "value": "0.66",
+            "unit": "mg/dL",
+            "reference_range": "0.6-1.3",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": false,
+            "value": true,
+            "unit": true,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "Leucocytes",
+            "value": "3.6",
+            "unit": "x10^9/L",
+            "reference_range": "4-11",
+            "flag": "L"
+          },
+          "pred": {
+            "test_name": "",
+            "value": "36",
+            "unit": "x1099/L",
+            "reference_range": "a",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": false,
+            "value": false,
+            "unit": false,
+            "reference_range": false,
+            "flag": false
+          },
+          "full_row_match": false
+        }
+      ],
+      "field_accuracy": 0.5,
+      "row_accuracy": 0.0,
+      "cell_accuracy": 0.4,
+      "n_gt_rows": 8,
+      "n_pred_rows": 8
+    }
+  ],
+  "successes": [
+    {
+      "doc_id": "test_en_0074",
+      "language": "en",
+      "augmented": false,
+      "elapsed_seconds": 0.5450912999999673,
+      "field_results": {
+        "lab_name": {
+          "gt": "Prime Clinical Labs",
+          "pred": "Prime Clinical Labs",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "lab_address": {
+          "gt": "6407 Anderson Cove Apt. 706, Lake Karenview, MA 31920",
+          "pred": "6407 Anderson Cove Apt. 706, Lake Karenview, MA 31920",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "patient_name": {
+          "gt": "Andrew Schultz",
+          "pred": "Andrew Schultz",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "dob": {
+          "gt": "29/01/2003",
+          "pred": "29/01/2003",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "patient_id": {
+          "gt": "PT-806242",
+          "pred": "PT-806242",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "report_date": {
+          "gt": "08/08/2026",
+          "pred": "08/08/2026",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "physician_name": {
+          "gt": "Dr. Brandon Nguyen",
+          "pred": "Dr. Brandon Nguyen",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "physician_id": {
+          "gt": "MD-20780",
+          "pred": "MD-20780",
+          "exact_match": true,
+          "similarity": 1.0
+        }
+      },
+      "row_results": [
+        {
+          "gt": {
+            "test_name": "Glucose",
+            "value": "82",
+            "unit": "mg/dL",
+            "reference_range": "70-100",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "Glucose",
+            "value": "82",
+            "unit": "mg/dL",
+            "reference_range": "70-100",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": true,
+            "value": true,
+            "unit": true,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": true
+        },
+        {
+          "gt": {
+            "test_name": "Sodium",
+            "value": "138",
+            "unit": "mmol/L",
+            "reference_range": "135-145",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "Sodium",
+            "value": "138",
+            "unit": "mmol/L",
+            "reference_range": "135-145",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": true,
+            "value": true,
+            "unit": true,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": true
+        },
+        {
+          "gt": {
+            "test_name": "Potassium",
+            "value": "4.3",
+            "unit": "mmol/L",
+            "reference_range": "3.5-5.1",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "Potassium",
+            "value": "43",
+            "unit": "mmol/L",
+            "reference_range": "3.55.1",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": true,
+            "value": false,
+            "unit": true,
+            "reference_range": false,
+            "flag": true
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "Cholesterol Total",
+            "value": "152",
+            "unit": "mg/dL",
+            "reference_range": "125-200",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "Cholesterol Total",
+            "value": "152",
+            "unit": "mg/dL",
+            "reference_range": "125-200",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": true,
+            "value": true,
+            "unit": true,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": true
+        },
+        {
+          "gt": {
+            "test_name": "White Blood Cell Count",
+            "value": "9.1",
+            "unit": "x10^9/L",
+            "reference_range": "4-11",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "White Blood Cell Count",
+            "value": "94",
+            "unit": "x10\u00b09/L,",
+            "reference_range": "ant",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": true,
+            "value": false,
+            "unit": false,
+            "reference_range": false,
+            "flag": true
+          },
+          "full_row_match": false
+        }
+      ],
+      "field_accuracy": 1.0,
+      "row_accuracy": 0.6,
+      "cell_accuracy": 0.8,
+      "n_gt_rows": 5,
+      "n_pred_rows": 5
+    },
+    {
+      "doc_id": "test_fr_0075",
+      "language": "fr",
+      "augmented": false,
+      "elapsed_seconds": 0.5415961000001062,
+      "field_results": {
+        "lab_name": {
+          "gt": "Laboratoire BioSante",
+          "pred": "Laboratoire BioSante",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "lab_address": {
+          "gt": "6, rue Leclercq, 25716 Auger",
+          "pred": "6, rue Leclercq, 25716 Auger",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "patient_name": {
+          "gt": "Marianne-Alexandrie Guillot",
+          "pred": "Marianne-Alexandrie Guillot",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "dob": {
+          "gt": "27/05/1973",
+          "pred": "27/05/1973",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "patient_id": {
+          "gt": "PT-397388",
+          "pred": "PT-397388",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "report_date": {
+          "gt": "24/07/2026",
+          "pred": "24/07/2026",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "physician_name": {
+          "gt": "Dr. Julie de Caron",
+          "pred": "Dr. Julie de Caron",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "physician_id": {
+          "gt": "FR738834325",
+          "pred": "FR738834325",
+          "exact_match": true,
+          "similarity": 1.0
+        }
+      },
+      "row_results": [
+        {
+          "gt": {
+            "test_name": "Calcium",
+            "value": "7.5",
+            "unit": "mg/dL",
+            "reference_range": "8.5-10.5",
+            "flag": "L"
+          },
+          "pred": {
+            "test_name": "Calcium",
+            "value": "7.5",
+            "unit": "mg/dL",
+            "reference_range": "8.5-10.5",
+            "flag": "L"
+          },
+          "cell_matches": {
+            "test_name": true,
+            "value": true,
+            "unit": true,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": true
+        },
+        {
+          "gt": {
+            "test_name": "Creatinine",
+            "value": "1.08",
+            "unit": "mg/dL",
+            "reference_range": "0.6-1.3",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "Creatinine",
+            "value": "1.08",
+            "unit": "mg/dL",
+            "reference_range": "0.613",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": true,
+            "value": true,
+            "unit": true,
+            "reference_range": false,
+            "flag": true
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "Plaquettes",
+            "value": "508",
+            "unit": "x10^9/L",
+            "reference_range": "150-400",
+            "flag": "H"
+          },
+          "pred": {
+            "test_name": "Plaquettes",
+            "value": "508",
+            "unit": "x10\u00b09/L",
+            "reference_range": "150-400",
+            "flag": "H"
+          },
+          "cell_matches": {
+            "test_name": true,
+            "value": true,
+            "unit": false,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "Leucocytes",
+            "value": "3.2",
+            "unit": "x10^9/L",
+            "reference_range": "4-11",
+            "flag": "L"
+          },
+          "pred": {
+            "test_name": "Leucocytes",
+            "value": "32",
+            "unit": "x10\u00b09/L",
+            "reference_range": "an",
+            "flag": "L"
+          },
+          "cell_matches": {
+            "test_name": true,
+            "value": false,
+            "unit": false,
+            "reference_range": false,
+            "flag": true
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "Uree",
+            "value": "5",
+            "unit": "mg/dL",
+            "reference_range": "7-20",
+            "flag": "L"
+          },
+          "pred": {
+            "test_name": "Uree",
+            "value": "5",
+            "unit": "mg/dL",
+            "reference_range": "7-20",
+            "flag": "L"
+          },
+          "cell_matches": {
+            "test_name": true,
+            "value": true,
+            "unit": true,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": true
+        },
+        {
+          "gt": {
+            "test_name": "Cholesterol Total",
+            "value": "133",
+            "unit": "mg/dL",
+            "reference_range": "125-200",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "Cholesterol Total",
+            "value": "133",
+            "unit": "mg/dL",
+            "reference_range": "125-200",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": true,
+            "value": true,
+            "unit": true,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": true
+        },
+        {
+          "gt": {
+            "test_name": "Glucose",
+            "value": "99",
+            "unit": "mg/dL",
+            "reference_range": "70-100",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "Glucose",
+            "value": "99",
+            "unit": "mg/dL",
+            "reference_range": "70-100",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": true,
+            "value": true,
+            "unit": true,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": true
+        },
+        {
+          "gt": {
+            "test_name": "Potassium",
+            "value": "6.1",
+            "unit": "mmol/L",
+            "reference_range": "3.5-5.1",
+            "flag": "H"
+          },
+          "pred": {
+            "test_name": "Potassium",
+            "value": "61",
+            "unit": "mmol/L.",
+            "reference_range": "3.55.1",
+            "flag": "H"
+          },
+          "cell_matches": {
+            "test_name": true,
+            "value": false,
+            "unit": false,
+            "reference_range": false,
+            "flag": true
+          },
+          "full_row_match": false
+        }
+      ],
+      "field_accuracy": 1.0,
+      "row_accuracy": 0.5,
+      "cell_accuracy": 0.8,
+      "n_gt_rows": 8,
+      "n_pred_rows": 8
+    },
+    {
+      "doc_id": "test_en_0076",
+      "language": "en",
+      "augmented": false,
+      "elapsed_seconds": 0.5814620999999534,
+      "field_results": {
+        "lab_name": {
+          "gt": "City Health Labs",
+          "pred": "City Health Labs",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "lab_address": {
+          "gt": "200 Sanders Dale, Greerburgh, MH 59523",
+          "pred": "200 Sanders Dale, Greerburgh, MH 59523",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "patient_name": {
+          "gt": "Alex Boyle",
+          "pred": "Alex Boyle",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "dob": {
+          "gt": "05/06/1962",
+          "pred": "05/06/1962",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "patient_id": {
+          "gt": "PT-344181",
+          "pred": "PT-344181",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "report_date": {
+          "gt": "19/07/2026",
+          "pred": "19/07/2026",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "physician_name": {
+          "gt": "Dr. Kelly Andrews",
+          "pred": "Dr. Kelly Andrews",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "physician_id": {
+          "gt": "MD-49682",
+          "pred": "MD-49682",
+          "exact_match": true,
+          "similarity": 1.0
+        }
+      },
+      "row_results": [
+        {
+          "gt": {
+            "test_name": "Platelet Count",
+            "value": "388",
+            "unit": "x10^9/L",
+            "reference_range": "150-400",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "Platelet Count",
+            "value": "388",
+            "unit": "x10\u00b09/L",
+            "reference_range": "150-400",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": true,
+            "value": true,
+            "unit": false,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "Creatinine",
+            "value": "0.96",
+            "unit": "mg/dL",
+            "reference_range": "0.6-1.3",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "Creatinine",
+            "value": "0.96",
+            "unit": "mg/dL.",
+            "reference_range": "061.3",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": true,
+            "value": true,
+            "unit": false,
+            "reference_range": false,
+            "flag": true
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "Urea",
+            "value": "4",
+            "unit": "mg/dL",
+            "reference_range": "7-20",
+            "flag": "L"
+          },
+          "pred": {
+            "test_name": "Urea",
+            "value": "4",
+            "unit": "mg/dL.",
+            "reference_range": "7-20",
+            "flag": "L"
+          },
+          "cell_matches": {
+            "test_name": true,
+            "value": true,
+            "unit": false,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "Potassium",
+            "value": "3.9",
+            "unit": "mmol/L",
+            "reference_range": "3.5-5.1",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "Potassium",
+            "value": "39",
+            "unit": "mmol/L",
+            "reference_range": "35-51",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": true,
+            "value": false,
+            "unit": true,
+            "reference_range": false,
+            "flag": true
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "Sodium",
+            "value": "135",
+            "unit": "mmol/L",
+            "reference_range": "135-145",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "Sodium",
+            "value": "135",
+            "unit": "mmol/L",
+            "reference_range": "135-145",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": true,
+            "value": true,
+            "unit": true,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": true
+        },
+        {
+          "gt": {
+            "test_name": "Cholesterol Total",
+            "value": "187",
+            "unit": "mg/dL",
+            "reference_range": "125-200",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "Cholesterol Total",
+            "value": "187",
+            "unit": "mg/dL.",
+            "reference_range": "125-200",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": true,
+            "value": true,
+            "unit": false,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "Glucose",
+            "value": "71",
+            "unit": "mg/dL",
+            "reference_range": "70-100",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "Glucose",
+            "value": "fal",
+            "unit": "mg/dL.",
+            "reference_range": "70-100",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": true,
+            "value": false,
+            "unit": false,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "White Blood Cell Count",
+            "value": "13.2",
+            "unit": "x10^9/L",
+            "reference_range": "4-11",
+            "flag": "H"
+          },
+          "pred": {
+            "test_name": "White Blood Cell Count",
+            "value": "13.2",
+            "unit": "x10\u00b09/L",
+            "reference_range": "Att",
+            "flag": "H"
+          },
+          "cell_matches": {
+            "test_name": true,
+            "value": true,
+            "unit": false,
+            "reference_range": false,
+            "flag": true
+          },
+          "full_row_match": false
+        }
+      ],
+      "field_accuracy": 1.0,
+      "row_accuracy": 0.125,
+      "cell_accuracy": 0.725,
+      "n_gt_rows": 8,
+      "n_pred_rows": 8
+    },
+    {
+      "doc_id": "test_fr_0077",
+      "language": "fr",
+      "augmented": false,
+      "elapsed_seconds": 0.49562059999993835,
+      "field_results": {
+        "lab_name": {
+          "gt": "Laboratoire Central de Biologie",
+          "pred": "Laboratoire Central de Biologie",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "lab_address": {
+          "gt": "14, avenue Agathe Fischer, 27430 Sainte Constanceboeuf",
+          "pred": "14, avenue Agathe Fischer, 27430 Sainte Constanceboeuf",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "patient_name": {
+          "gt": "Chantal Germain",
+          "pred": "Chantal Germain",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "dob": {
+          "gt": "06/06/1979",
+          "pred": "06/06/1979",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "patient_id": {
+          "gt": "PT-793193",
+          "pred": "PT-793193",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "report_date": {
+          "gt": "26/07/2026",
+          "pred": "26/07/2026",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "physician_name": {
+          "gt": "Dr. Antoine-Luc Dos Santos",
+          "pred": "Dr. Antoine-Luc Dos Santos",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "physician_id": {
+          "gt": "FR868501922",
+          "pred": "FR868501922",
+          "exact_match": true,
+          "similarity": 1.0
+        }
+      },
+      "row_results": [
+        {
+          "gt": {
+            "test_name": "Plaquettes",
+            "value": "365",
+            "unit": "x10^9/L",
+            "reference_range": "150-400",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "Plaquettes",
+            "value": "365",
+            "unit": "x10\u00b09/L",
+            "reference_range": "150-400",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": true,
+            "value": true,
+            "unit": false,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "Cholesterol Total",
+            "value": "196",
+            "unit": "mg/dL",
+            "reference_range": "125-200",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "Cholesterol Total",
+            "value": "196",
+            "unit": "mg/dL",
+            "reference_range": "125-200",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": true,
+            "value": true,
+            "unit": true,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": true
+        },
+        {
+          "gt": {
+            "test_name": "Creatinine",
+            "value": "0.55",
+            "unit": "mg/dL",
+            "reference_range": "0.6-1.3",
+            "flag": "L"
+          },
+          "pred": {
+            "test_name": "Creatinine",
+            "value": "0.55",
+            "unit": "mg/dL",
+            "reference_range": "0.613",
+            "flag": "L"
+          },
+          "cell_matches": {
+            "test_name": true,
+            "value": true,
+            "unit": true,
+            "reference_range": false,
+            "flag": true
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "Sodium",
+            "value": "138",
+            "unit": "mmol/L",
+            "reference_range": "135-145",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "Sodium",
+            "value": "138",
+            "unit": "mmol/L.",
+            "reference_range": "135-145",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": true,
+            "value": true,
+            "unit": false,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "Uree",
+            "value": "13",
+            "unit": "mg/dL",
+            "reference_range": "7-20",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "Uree",
+            "value": "13",
+            "unit": "mg/dL",
+            "reference_range": "7-20",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": true,
+            "value": true,
+            "unit": true,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": true
+        },
+        {
+          "gt": {
+            "test_name": "Potassium",
+            "value": "7.3",
+            "unit": "mmol/L",
+            "reference_range": "3.5-5.1",
+            "flag": "H"
+          },
+          "pred": {
+            "test_name": "Potassium",
+            "value": "73",
+            "unit": "mmol/L.",
+            "reference_range": "3.55.1",
+            "flag": "H"
+          },
+          "cell_matches": {
+            "test_name": true,
+            "value": false,
+            "unit": false,
+            "reference_range": false,
+            "flag": true
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "Glucose",
+            "value": "91",
+            "unit": "mg/dL",
+            "reference_range": "70-100",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "Glucose",
+            "value": "1",
+            "unit": "mg/dL",
+            "reference_range": "70-100",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": true,
+            "value": false,
+            "unit": true,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "Calcium",
+            "value": "8.8",
+            "unit": "mg/dL",
+            "reference_range": "8.5-10.5",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "Calcium",
+            "value": "8.8",
+            "unit": "mg/dL",
+            "reference_range": "8.5-10.5",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": true,
+            "value": true,
+            "unit": true,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": true
+        }
+      ],
+      "field_accuracy": 1.0,
+      "row_accuracy": 0.375,
+      "cell_accuracy": 0.825,
+      "n_gt_rows": 8,
+      "n_pred_rows": 8
+    },
+    {
+      "doc_id": "test_en_0078",
+      "language": "en",
+      "augmented": false,
+      "elapsed_seconds": 0.6667315999998209,
+      "field_results": {
+        "lab_name": {
+          "gt": "Riverside Pathology Center",
+          "pred": "Riverside Pathology Center",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "lab_address": {
+          "gt": "PSC 3718, Box 5098, APO AE 85121",
+          "pred": "PSC 3718, Box 5098, APO AE 85121",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "patient_name": {
+          "gt": "Kim Norris",
+          "pred": "Kim Norris",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "dob": {
+          "gt": "16/06/2016",
+          "pred": "16/06/2016",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "patient_id": {
+          "gt": "PT-807814",
+          "pred": "PT-807814",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "report_date": {
+          "gt": "12/07/2026",
+          "pred": "12/07/2026",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "physician_name": {
+          "gt": "Dr. William Parker",
+          "pred": "Dr. William Parker",
+          "exact_match": true,
+          "similarity": 1.0
+        },
+        "physician_id": {
+          "gt": "MD-63992",
+          "pred": "MD-63992",
+          "exact_match": true,
+          "similarity": 1.0
+        }
+      },
+      "row_results": [
+        {
+          "gt": {
+            "test_name": "Urea",
+            "value": "15",
+            "unit": "mg/dL",
+            "reference_range": "7-20",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "Urea",
+            "value": "15",
+            "unit": "mg/dL",
+            "reference_range": "7-20",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": true,
+            "value": true,
+            "unit": true,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": true
+        },
+        {
+          "gt": {
+            "test_name": "Calcium",
+            "value": "9.9",
+            "unit": "mg/dL",
+            "reference_range": "8.5-10.5",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "Calcium",
+            "value": "9.9",
+            "unit": "mg/dL",
+            "reference_range": "8.5-10.5",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": true,
+            "value": true,
+            "unit": true,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": true
+        },
+        {
+          "gt": {
+            "test_name": "Platelet Count",
+            "value": "221",
+            "unit": "x10^9/L",
+            "reference_range": "150-400",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "Platelet Count",
+            "value": "221",
+            "unit": "x10\u00b09/L,",
+            "reference_range": "150-400",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": true,
+            "value": true,
+            "unit": false,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "Cholesterol Total",
+            "value": "222",
+            "unit": "mg/dL",
+            "reference_range": "125-200",
+            "flag": "H"
+          },
+          "pred": {
+            "test_name": "Cholesterol Total",
+            "value": "222",
+            "unit": "mg/dL",
+            "reference_range": "125-200",
+            "flag": "H"
+          },
+          "cell_matches": {
+            "test_name": true,
+            "value": true,
+            "unit": true,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": true
+        },
+        {
+          "gt": {
+            "test_name": "Creatinine",
+            "value": "1.17",
+            "unit": "mg/dL",
+            "reference_range": "0.6-1.3",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "Creatinine",
+            "value": "117",
+            "unit": "mg/dL",
+            "reference_range": "0.613",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": true,
+            "value": false,
+            "unit": true,
+            "reference_range": false,
+            "flag": true
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "White Blood Cell Count",
+            "value": "9.4",
+            "unit": "x10^9/L",
+            "reference_range": "4-11",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "White Blood Cell Count",
+            "value": "94",
+            "unit": "x10\u00b09/L,",
+            "reference_range": "ant",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": true,
+            "value": false,
+            "unit": false,
+            "reference_range": false,
+            "flag": true
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "Hemoglobin",
+            "value": "13.5",
+            "unit": "g/dL",
+            "reference_range": "12-16",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "Hemoglobin",
+            "value": "13.5",
+            "unit": "gid",
+            "reference_range": "12-16",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": true,
+            "value": true,
+            "unit": false,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": false
+        },
+        {
+          "gt": {
+            "test_name": "Sodium",
+            "value": "145",
+            "unit": "mmol/L",
+            "reference_range": "135-145",
+            "flag": ""
+          },
+          "pred": {
+            "test_name": "Sodium",
+            "value": "145",
+            "unit": "mmol/L",
+            "reference_range": "135-145",
+            "flag": ""
+          },
+          "cell_matches": {
+            "test_name": true,
+            "value": true,
+            "unit": true,
+            "reference_range": true,
+            "flag": true
+          },
+          "full_row_match": true
+        }
+      ],
+      "field_accuracy": 1.0,
+      "row_accuracy": 0.5,
+      "cell_accuracy": 0.825,
+      "n_gt_rows": 8,
+      "n_pred_rows": 8
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "n_documents": 240,
+  "classifier_accuracy": {
+    "original": 1.0,
+    "strict": 1.0,
+    "typed": 0.9958333333333333,
+    "surrogate": 1.0
+  },
+  "ner_entity_recall_vs_original": {
+    "strict": 0.7490283790283788,
+    "typed": 0.7584627525252521,
+    "surrogate": 0.7717353595478594
+  }
+}

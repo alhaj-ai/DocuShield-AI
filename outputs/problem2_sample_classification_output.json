@@ -1,0 +1,84 @@
+[
+  {
+    "classification": {
+      "label": "healthcare",
+      "confidence": 0.7269290089607239
+    },
+    "entities": [
+      {
+        "family": "CHEM",
+        "text": "Creatinine"
+      }
+    ],
+    "true_label": "healthcare",
+    "text_preview": "City Health Labs + 7972 Samantha Rapids Apt. 363, Dyermouth, FM 08082 999.706.6877x3169 LABORATORY REPORT Patient Name: Laura Stanley Date of Birth: P"
+  },
+  {
+    "classification": {
+      "label": "legal",
+      "confidence": 0.9725277423858643
+    },
+    "entities": [],
+    "true_label": "legal",
+    "text_preview": "PROCEDURE\n\nThe case originated in an application (no. 3684/07) against the Kingdom of Sweden lodged with the Court under Article 34 of the Convention "
+  },
+  {
+    "classification": {
+      "label": "finance",
+      "confidence": 0.9466045498847961
+    },
+    "entities": [],
+    "true_label": "finance",
+    "text_preview": "                                            WELLSPRING SHIPPING LTD.\n                                             Bill of Lading (Weighing Certificate"
+  },
+  {
+    "classification": {
+      "label": "legal",
+      "confidence": 0.971747100353241
+    },
+    "entities": [],
+    "true_label": "legal",
+    "text_preview": "PROCEDURE\n\nThe case originated in an application (no. 38249/09) against the Republic of Turkey lodged with the Court under Article 34 of the Conventio"
+  },
+  {
+    "classification": {
+      "label": "legal",
+      "confidence": 0.9693348407745361
+    },
+    "entities": [],
+    "true_label": "legal",
+    "text_preview": "PROCEDURE\n\nThe case originated in an application (no. 57292/12) against the Republic of Poland lodged with the Court under Article 34 of the Conventio"
+  },
+  {
+    "classification": {
+      "label": "legal",
+      "confidence": 0.9689117074012756
+    },
+    "entities": [],
+    "true_label": "legal",
+    "text_preview": "PROCEDURE\n\nThe case originated in an application (no. 61800/08) against the Kingdom of Spain lodged with the Court under Article 34 of the Convention "
+  },
+  {
+    "classification": {
+      "label": "multi_domain",
+      "confidence": 0.7889034152030945
+    },
+    "entities": [
+      {
+        "family": "LIVB",
+        "text": "Patient"
+      }
+    ],
+    "true_label": "multi_domain",
+    "text_preview": "Laboratoire BioSante + 57, rue Julie Prévost, 02512 Poulain-les-Bains +33 (0)4 58 71 8291 RAPPORT DE LABORATOIRE Nom du Patient Aimé Klein ID Patient:"
+  },
+  {
+    "classification": {
+      "label": "finance",
+      "confidence": 0.9502529501914978
+    },
+    "entities": [],
+    "true_label": "finance",
+    "text_preview": "MERGER AGREEMENT\n\nThis Merger Agreement (the \"Agreement\") is made and entered into as of the 1st day of January, 2023 (the \"Effective Date\"), by and b"
+  }
+]

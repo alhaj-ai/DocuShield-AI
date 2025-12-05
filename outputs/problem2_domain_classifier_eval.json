@@ -1,0 +1,151 @@
+{
+  "tfidf_logreg_baseline": {
+    "accuracy": 0.9,
+    "confusion_matrix": [
+      [
+        8,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        12,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        9,
+        1
+      ],
+      [
+        2,
+        0,
+        1,
+        7
+      ]
+    ],
+    "labels": [
+      "healthcare",
+      "legal",
+      "finance",
+      "multi_domain"
+    ],
+    "classification_report": {
+      "healthcare": {
+        "precision": 0.8,
+        "recall": 1.0,
+        "f1-score": 0.8888888888888888,
+        "support": 8.0
+      },
+      "legal": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 12.0
+      },
+      "finance": {
+        "precision": 0.9,
+        "recall": 0.9,
+        "f1-score": 0.9,
+        "support": 10.0
+      },
+      "multi_domain": {
+        "precision": 0.875,
+        "recall": 0.7,
+        "f1-score": 0.7777777777777778,
+        "support": 10.0
+      },
+      "accuracy": 0.9,
+      "macro avg": {
+        "precision": 0.89375,
+        "recall": 0.8999999999999999,
+        "f1-score": 0.8916666666666666,
+        "support": 40.0
+      },
+      "weighted avg": {
+        "precision": 0.9037499999999999,
+        "recall": 0.9,
+        "f1-score": 0.8972222222222221,
+        "support": 40.0
+      }
+    }
+  },
+  "xlmr_classifier": {
+    "accuracy": 1.0,
+    "confusion_matrix": [
+      [
+        8,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        12,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        10,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        10
+      ]
+    ],
+    "labels": [
+      "healthcare",
+      "legal",
+      "finance",
+      "multi_domain"
+    ],
+    "classification_report": {
+      "healthcare": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 8.0
+      },
+      "legal": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 12.0
+      },
+      "finance": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 10.0
+      },
+      "multi_domain": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 10.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 40.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 40.0
+      }
+    },
+    "train_time_seconds": 312.8242449760437
+  }
+}

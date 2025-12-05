@@ -1,0 +1,233 @@
+{
+  "joint_on_en": {
+    "ANAT": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0
+    },
+    "CHEM": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0
+    },
+    "DISEASE": {
+      "precision": 0.7343453510436433,
+      "recall": 0.80625,
+      "f1-score": 0.7686196623634559,
+      "support": 960
+    },
+    "micro avg": {
+      "precision": 0.7295004712535345,
+      "recall": 0.80625,
+      "f1-score": 0.7659574468085106,
+      "support": 960
+    },
+    "macro avg": {
+      "precision": 0.24478178368121442,
+      "recall": 0.26875,
+      "f1-score": 0.25620655412115195,
+      "support": 960
+    },
+    "weighted avg": {
+      "precision": 0.7343453510436433,
+      "recall": 0.80625,
+      "f1-score": 0.7686196623634559,
+      "support": 960
+    }
+  },
+  "joint_on_fr": {
+    "ANAT": {
+      "precision": 0.39570552147239263,
+      "recall": 0.5222672064777328,
+      "f1-score": 0.450261780104712,
+      "support": 494
+    },
+    "CHEM": {
+      "precision": 0.6687956204379562,
+      "recall": 0.7250247279920871,
+      "f1-score": 0.6957759848125296,
+      "support": 1011
+    },
+    "DEVI": {
+      "precision": 0.3235294117647059,
+      "recall": 0.10377358490566038,
+      "f1-score": 0.15714285714285714,
+      "support": 106
+    },
+    "DISEASE": {
+      "precision": 0.4854732895970009,
+      "recall": 0.555793991416309,
+      "f1-score": 0.5182591295647824,
+      "support": 932
+    },
+    "GEOG": {
+      "precision": 0.543859649122807,
+      "recall": 0.484375,
+      "f1-score": 0.5123966942148761,
+      "support": 64
+    },
+    "LIVB": {
+      "precision": 0.7368421052631579,
+      "recall": 0.7339805825242719,
+      "f1-score": 0.735408560311284,
+      "support": 515
+    },
+    "OBJC": {
+      "precision": 0.5,
+      "recall": 0.011904761904761904,
+      "f1-score": 0.023255813953488372,
+      "support": 84
+    },
+    "PHEN": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 77
+    },
+    "PHYS": {
+      "precision": 0.36416184971098264,
+      "recall": 0.3230769230769231,
+      "f1-score": 0.3423913043478261,
+      "support": 195
+    },
+    "PROC": {
+      "precision": 0.5010964912280702,
+      "recall": 0.6101468624833111,
+      "f1-score": 0.5502709211318483,
+      "support": 749
+    },
+    "micro avg": {
+      "precision": 0.5437194851309365,
+      "recall": 0.5796072864916016,
+      "f1-score": 0.561090117943433,
+      "support": 4227
+    },
+    "macro avg": {
+      "precision": 0.45194639385970736,
+      "recall": 0.40703436407810567,
+      "f1-score": 0.3985163045584204,
+      "support": 4227
+    },
+    "weighted avg": {
+      "precision": 0.5348946434349304,
+      "recall": 0.5796072864916016,
+      "f1-score": 0.5483640883052878,
+      "support": 4227
+    }
+  },
+  "en_only_zero_shot_on_fr": {
+    "ANAT": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 494
+    },
+    "CHEM": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 1011
+    },
+    "DEVI": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 106
+    },
+    "DISEASE": {
+      "precision": 0.24113475177304963,
+      "recall": 0.4012875536480687,
+      "f1-score": 0.3012484897301651,
+      "support": 932
+    },
+    "GEOG": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 64
+    },
+    "LIVB": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 515
+    },
+    "OBJC": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 84
+    },
+    "PHEN": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 77
+    },
+    "PHYS": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 195
+    },
+    "PROC": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 749
+    },
+    "micro avg": {
+      "precision": 0.24113475177304963,
+      "recall": 0.08847882659096286,
+      "f1-score": 0.1294565593631014,
+      "support": 4227
+    },
+    "macro avg": {
+      "precision": 0.024113475177304965,
+      "recall": 0.04012875536480687,
+      "f1-score": 0.03012484897301651,
+      "support": 4227
+    },
+    "weighted avg": {
+      "precision": 0.05316716078838,
+      "recall": 0.08847882659096286,
+      "f1-score": 0.06642147916454079,
+      "support": 4227
+    }
+  },
+  "en_only_on_en": {
+    "DISEASE": {
+      "precision": 0.5539033457249071,
+      "recall": 0.6208333333333333,
+      "f1-score": 0.5854616895874263,
+      "support": 960
+    },
+    "micro avg": {
+      "precision": 0.5539033457249071,
+      "recall": 0.6208333333333333,
+      "f1-score": 0.5854616895874263,
+      "support": 960
+    },
+    "macro avg": {
+      "precision": 0.5539033457249071,
+      "recall": 0.6208333333333333,
+      "f1-score": 0.5854616895874263,
+      "support": 960
+    },
+    "weighted avg": {
+      "precision": 0.5539033457249071,
+      "recall": 0.6208333333333333,
+      "f1-score": 0.5854616895874263,
+      "support": 960
+    }
+  },
+  "cross_lingual_transfer_summary": {
+    "disease_f1_en_only_zero_shot_fr": 0.3012484897301651,
+    "disease_f1_joint_fr": 0.5182591295647824,
+    "overall_f1_en_only_zero_shot_fr": 0.1294565593631014,
+    "overall_f1_joint_fr": 0.561090117943433,
+    "note": "EN-only training data has zero examples of the FR-only families (['ANAT', 'CHEM', 'DEVI', 'GEOG', 'LIVB', 'OBJC', 'PHEN', 'PHYS', 'PROC']), so its zero-shot recall on those classes is structurally ~0 regardless of cross-lingual representation quality -- only the shared DISEASE class is a fair transfer comparison."
+  }
+}

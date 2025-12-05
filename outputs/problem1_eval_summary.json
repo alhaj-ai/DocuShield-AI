@@ -1,0 +1,53 @@
+{
+  "n_documents": 80,
+  "overall_field_accuracy": 0.8703125,
+  "overall_row_accuracy": 0.23543154761904755,
+  "overall_cell_accuracy": 0.7221279761904762,
+  "avg_processing_time_seconds": 0.5527888112500108,
+  "per_field": {
+    "lab_name": {
+      "exact_match_accuracy": 0.975,
+      "avg_similarity": 0.9770833333333334,
+      "n": 80
+    },
+    "lab_address": {
+      "exact_match_accuracy": 0.75,
+      "avg_similarity": 0.964563721479899,
+      "n": 80
+    },
+    "patient_name": {
+      "exact_match_accuracy": 0.7,
+      "avg_similarity": 0.953312472089378,
+      "n": 80
+    },
+    "dob": {
+      "exact_match_accuracy": 0.925,
+      "avg_similarity": 0.990592105263158,
+      "n": 80
+    },
+    "patient_id": {
+      "exact_match_accuracy": 0.9125,
+      "avg_similarity": 0.9125,
+      "n": 80
+    },
+    "report_date": {
+      "exact_match_accuracy": 0.95,
+      "avg_similarity": 0.9824999999999999,
+      "n": 80
+    },
+    "physician_name": {
+      "exact_match_accuracy": 0.75,
+      "avg_similarity": 0.9259799166634819,
+      "n": 80
+    },
+    "physician_id": {
+      "exact_match_accuracy": 1.0,
+      "avg_similarity": 1.0,
+      "n": 80
+    }
+  },
+  "en_field_accuracy": 0.94375,
+  "fr_field_accuracy": 0.796875,
+  "augmented_field_accuracy": 0.7105263157894737,
+  "clean_field_accuracy": 0.9200819672131147
+}
