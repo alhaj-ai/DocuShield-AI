@@ -1,8 +1,8 @@
 <div align="center">
 
 # 🛡️ DocuShield AI
-### Multilingual & Arabic Privacy-Preserving Document Intelligence
-*منظومة هندسية ذكية متقدمة لمعالجة المستندات الطبية وهيكلتها وحجب البيانات الحساسة باللغات العربية والإنجليزية والفرنسية*
+### Multilingual, Yemeni & Arabic Privacy-Preserving Document Intelligence
+*منظومة هندسية ذكية متقدمة لمعالجة المستندات الطبية وهيكلتها وحجب البيانات الحساسة (الرقم الوطني اليمني، شبكات الاتصالات، والهويات العربية)*
 
 <br/>
 
@@ -18,7 +18,7 @@
 
 **Engineered & Developed by [Mohammed AL-Haj](https://github.com/alhaj-ai)**  
 *AI Engineer | LLMs, Multi-Agent Systems & Production AI Architectures*  
-[LinkedIn](https://www.linkedin.com/in/mohammed-mohammed-al-haj-341ab7369) · [GitHub](https://github.com/alhaj-ai) · `ai.mohammed.alhaj@gmail.com`
+📍 *Sana'a, Yemen* · [LinkedIn](https://www.linkedin.com/in/mohammed-mohammed-al-haj-341ab7369) · [GitHub](https://github.com/alhaj-ai) · `ai.mohammed.alhaj@gmail.com`
 
 ---
 
@@ -107,22 +107,22 @@ flowchart TD
 
 ---
 
-## 🇸🇦 Arabic Sovereign AI & Privacy Compliance
+## 🇾🇪 Yemeni & Arabic Sovereign AI & Privacy Compliance
 
-In healthcare and enterprise environments across the Kingdom of Saudi Arabia and the GCC, protecting personal identifiable information is mandatory under the **Saudi Data & Artificial Intelligence Authority (SDAIA)** regulations and the **Personal Data Protection Law (PDPL)**.
+In healthcare and clinical environments across Yemen and the wider Arab region, protecting sensitive personal and medical data is essential for patient privacy and regulatory compliance.
 
 **DocuShield AI provides dedicated native support for:**
-* **Saudi National Identification (الهوية الوطنية)**: Strict 10-digit validation for Saudi citizens (starting with `1`).
-* **Resident Identity (الإقامة)**: 10-digit validation for residents (starting with `2`).
-* **Regional Phone Networks**: Saudi mobile numbers (`+9665X`, `05X`), Yemeni networks (`+9677X`, `7X`), and GCC formats.
-* **Clinical Identifiers**: Medical Record Numbers (MRN), clinic file references, and hospital numbers.
-* **Honorific Context Heuristics**: Capturing patient and physician names in Arabic context (`المريض: ...`, `دكتور: ...`).
+* **Yemeni National Identification (الرقم الوطني الموحد للجمهورية اليمنية)**: 11-digit unified national ID validation (governorate code + date + record) and 10-digit personal cards.
+* **Yemeni Telecom Networks**: Native detection for Yemen Mobile (`77`, `78`), YOU (`73`), Sabafon (`71`), Y Telecom (`70`), and Sana'a/Aden landlines (`01`, `02`).
+* **Regional & International Arab Numbers**: Complete international routing (`+967`, `+966`, etc.).
+* **Clinical Identifiers**: Medical Record Numbers (MRN) across Yemeni hospitals (Thawra, Kuwait, Republican Hospital) and clinic records.
+* **Honorific Context Heuristics**: Capturing patient and physician names in Arabic context (`المريض: ...`, `استشاري/دكتور: ...`).
 
 ### 🔄 Redaction Comparison Sample:
 
-| Original Clinical Text (Arabic) | Typed Redaction (`arabic_labels=True`) | Strict Mode (`mode='strict'`) |
+| Original Clinical Text (Arabic/Yemeni) | Typed Redaction (`arabic_labels=True`) | Strict Mode (`mode='strict'`) |
 |---|---|---|
-| المريض **محمد عبدالله القحطاني**، هوية رقم **1089234567**، جوال: **0551234567** | المريض **[اسم]**، هوية رقم **[هوية_وطنية]**، جوال: **[هاتف]** | المريض **[محجوب]**، هوية رقم **[محجوب]**، جوال: **[محجوب]** |
+| المريض **محمد ناصر العميسي**، الرقم الوطني **01010198452**، جوال: **771234567** | المريض **[اسم]**، الرقم الوطني **[رقم_وطني_يمني]**، جوال: **[هاتف]** | المريض **[محجوب]**، الرقم الوطني **[محجوب]**، جوال: **[محجوب]** |
 | Patient **John Doe**, SSN **123-45-6789**, email: **john@clinic.com** | Patient **[NAME]**, SSN **[SSN]**, email: **[EMAIL]** | Patient **[REDACTED]**, SSN **[REDACTED]**, email: **[REDACTED]** |
 
 ---
@@ -223,7 +223,7 @@ Content-Type: application/json
 curl -X POST http://127.0.0.1:8080/api/v1/pii/redact \
      -H "Content-Type: application/json" \
      -d '{
-       "text": "المريض سالم القحطاني، رقم الهوية 1089234567، هاتف: 0551234567",
+       "text": "المريض محمد ناصر العميسي، الرقم الوطني 01010198452، هاتف: 771234567",
        "mode": "typed",
        "arabic_labels": true
      }'
@@ -231,14 +231,14 @@ curl -X POST http://127.0.0.1:8080/api/v1/pii/redact \
 **Response:**
 ```json
 {
-  "original_text": "المريض سالم القحطاني، رقم الهوية 1089234567، هاتف: 0551234567",
-  "redacted_text": "المريض [اسم]، رقم الهوية [هوية_وطنية]، هاتف: [هاتف]",
+  "original_text": "المريض محمد ناصر العميسي، الرقم الوطني 01010198452، هاتف: 771234567",
+  "redacted_text": "المريض [اسم]، الرقم الوطني [رقم_وطني_يمني]، هاتف: [هاتف]",
   "mode": "typed",
   "total_redacted": 3,
   "detected_pii": [
-    {"type": "NAME", "text": "سالم القحطاني", "start": 7, "end": 20},
-    {"type": "SAUDI_NATIONAL_ID", "text": "1089234567", "start": 33, "end": 43},
-    {"type": "PHONE", "text": "0551234567", "start": 51, "end": 61}
+    {"type": "NAME", "text": "محمد ناصر العميسي", "start": 7, "end": 24},
+    {"type": "YEMENI_NATIONAL_ID", "text": "01010198452", "start": 39, "end": 50},
+    {"type": "PHONE", "text": "771234567", "start": 58, "end": 67}
   ]
 }
 ```

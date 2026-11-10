@@ -1,7 +1,7 @@
 """Three ways to redact the PII spans found by pii_detectors.py:
 
 - strict:    replace every PII span with the same generic marker [REDACTED] or [محجوب]
-- typed:     replace with a marker that names the PII type, e.g. [NAME] or [اسم]
+- typed:     replace with a marker that names the PII type, e.g. [NAME] or [رقم_وطني]
 - surrogate: replace with a fake but realistic-looking value, e.g. a made-up
              name instead of the real one, so the document stays readable
 """
@@ -13,7 +13,7 @@ try:
     _faker_en = Faker("en_US")
     _faker_fr = Faker("fr_FR")
     try:
-        _faker_ar = Faker("ar_SA")
+        _faker_ar = Faker("ar_AA")
     except Exception:
         _faker_ar = _faker_en
     _HAS_FAKER = True
@@ -30,45 +30,28 @@ ARABIC_TYPED_LABELS = {
     "ADDRESS": "عنوان",
     "DATE": "تاريخ",
     "SSN": "رقم_تأميني",
+    "YEMENI_NATIONAL_ID": "رقم_وطني_يمني",
     "SAUDI_NATIONAL_ID": "هوية_وطنية",
     "MEDICAL_ID": "رقم_طبي",
 }
 
 
 def _make_surrogate(pii_type: str, language: str = "ar") -> str:
-    if _HAS_FAKER:
-        faker = _faker_ar if language == "ar" else (_faker_fr if language == "fr" else _faker_en)
-        if pii_type == "NAME":
-            return faker.name()
-        if pii_type == "EMAIL":
-            return faker.email()
-        if pii_type == "PHONE":
-            return faker.phone_number()
-        if pii_type == "ADDRESS":
-            return faker.address().replace("\n", ", ")
-        if pii_type == "DATE":
-            return faker.date(pattern="%d/%m/%Y")
-        if pii_type == "SSN":
-            return faker.ssn()
-        if pii_type == "SAUDI_NATIONAL_ID":
-            return "1" + str(faker.random_number(digits=9, fix_len=True))
-        if pii_type == "MEDICAL_ID":
-            return "MRN-" + str(faker.random_number(digits=5, fix_len=True))
-
-    # Built-in lightweight fallback if Faker is not installed
     rnd = random.randint(10000, 99999)
     if pii_type == "NAME":
-        return "أحمد إبراهيم" if language == "ar" else "John Doe"
+        return "محمد علي الحاج" if language == "ar" else "John Doe"
     if pii_type == "EMAIL":
-        return f"user_{rnd}@example.com"
+        return f"patient_{rnd}@clinic.ye" if language == "ar" else f"user_{rnd}@example.com"
     if pii_type == "PHONE":
-        return f"+96650{rnd}{rnd%100:02d}" if language == "ar" else f"+1-555-01{rnd%100:02d}"
+        return f"+967 77{random.randint(1000000, 9999999)}" if language == "ar" else f"+1-555-01{rnd%100:02d}"
+    if pii_type == "YEMENI_NATIONAL_ID":
+        return f"0101{random.randint(1000000, 9999999)}"
     if pii_type == "SAUDI_NATIONAL_ID":
         return f"10{rnd}{rnd%1000:03d}"
     if pii_type == "MEDICAL_ID":
-        return f"MRN-{rnd}"
+        return f"MRN-YEM-{rnd}"
     if pii_type == "DATE":
-        return "2024-01-15"
+        return "2026-04-12"
     if pii_type == "SSN":
         return f"999-{rnd%100:02d}-{rnd%10000:04d}"
     return "[UNKNOWN]"
@@ -78,7 +61,7 @@ def redact_text(
     text: str,
     entities: List[Dict[str, Any]],
     mode: str = "typed",
-    language: str = "fr",
+    language: str = "ar",
     surrogate_map: Optional[Dict[Tuple[str, str], str]] = None,
     arabic_labels: bool = False
 ) -> Tuple[str, Dict[Tuple[str, str], str]]:
