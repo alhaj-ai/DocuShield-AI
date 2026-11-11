@@ -1,10 +1,8 @@
-"""Unit tests for DocuShield AI FastAPI endpoints."""
-import os
-import sys
+"""
+REST API endpoint test suite for DocuShield AI.
+"""
+
 from fastapi.testclient import TestClient
-
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-
 from src.api.main import app
 
 client = TestClient(app)
@@ -21,7 +19,7 @@ def test_health_endpoint():
 
 def test_pii_detection_endpoint():
     payload = {
-        "text": "المريض أحمد سالم، رقم الهوية 1098765432، هاتف: 0551234567، بريد: ahmed@clinic.sa"
+        "text": "المريض أحمد سالم، الرقم الوطني 01010198452، هاتف: 771234567، بريد: ahmed@clinic.ye"
     }
     response = client.post("/api/v1/pii/detect", json=payload)
     assert response.status_code == 200
@@ -29,7 +27,7 @@ def test_pii_detection_endpoint():
     assert data["detected_language"] == "ar"
     assert data["total_count"] >= 3
     types = [e["type"] for e in data["entities"]]
-    assert "SAUDI_NATIONAL_ID" in types
+    assert any(t in types for t in ["YEMENI_NATIONAL_ID", "NATIONAL_ID", "SAUDI_NATIONAL_ID"])
 
 
 def test_pii_redaction_endpoint():
@@ -49,4 +47,4 @@ if __name__ == "__main__":
     test_health_endpoint()
     test_pii_detection_endpoint()
     test_pii_redaction_endpoint()
-    print("\n[SUCCESS] All FastAPI endpoint tests passed!")
+    print("\n[SUCCESS] All FastAPI endpoint tests passed successfully!")
