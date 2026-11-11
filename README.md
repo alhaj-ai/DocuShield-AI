@@ -86,7 +86,7 @@ flowchart TD
     end
 
     subgraph PrivacyEngine ["🔒 Privacy & Anonymization Engine"]
-        PII_Ar["🇸🇦 Arabic PII Scanner<br/>(Yemen National ID / Iqama / GCC Phones / MRN)"]
+        PII_Ar["🇾🇪 Yemeni & Arabic PII Scanner<br/>(Yemen National ID / Telecom / MRN)"]
         PII_Multi["🌐 Multilingual PII Scanner<br/>(SSN / Emails / Addresses / Dates)"]
         Redactor["🛡️ Multi-Mode Redaction Core<br/>Strict [محجوب] · Typed [TAG] · Surrogate [Fake]"]
         
