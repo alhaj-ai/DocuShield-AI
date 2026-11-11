@@ -41,12 +41,12 @@
 
 ## 🌟 Executive Overview
 
-**DocuShield AI** is an enterprise-grade multimodal artificial intelligence platform engineered to bridge the critical gap between **complex visual document analysis** and **strict regulatory data privacy compliance** (Saudi Personal Data Protection Law - **PDPL**, **GDPR**, and **HIPAA**).
+**DocuShield AI** is an enterprise-grade multimodal artificial intelligence platform engineered to bridge the critical gap between **complex visual document analysis** and **strict regulatory data privacy compliance** (Yemen Personal Data Protection Law - **PDPL**, **GDPR**, and **HIPAA**).
 
 While traditional OCR and LLM solutions expose sensitive personal data to third-party endpoints or struggle with non-Latin scripts and layout geometry, **DocuShield AI** operates as a self-contained, air-gapped or on-premise pipeline capable of:
 1. **Multimodal Document Understanding**: Jointly processing 2D document image tokens, normalized bounding boxes, and extracted text via a fine-tuned **`LayoutLMv3`** backbone.
 2. **Cross-Lingual Clinical NER**: Multilingual disease and medical entity extraction across English and French using **`XLM-RoBERTa`**, validated on NCBI Disease and Quaero French Med corpora.
-3. **Arabic-First Privacy & PII Engine**: Deterministic detection and redacting of Saudi National IDs, Resident Iqama numbers, GCC & Yemeni phone numbers, medical record identifiers (MRN), and Arabic patient/physician names.
+3. **Arabic-First Privacy & PII Engine**: Deterministic detection and redacting of Yemen National IDs, Resident Iqama numbers, GCC & Yemeni phone numbers, medical record identifiers (MRN), and Arabic patient/physician names.
 4. **Zero-Trust Serving Stack**: Asynchronous **FastAPI** REST microservices and a real-time **Streamlit** dashboard enabling one-click de-identification before data leaves the clinical boundary.
 
 ---
@@ -56,7 +56,7 @@ While traditional OCR and LLM solutions expose sensitive personal data to third-
 | Feature | Production Implementation | Impact & Benchmark |
 |---|---|---|
 | **Multimodal Document AI** | Fine-tuned `microsoft/layoutlmv3-base` on synthetic clinical lab reports (13 semantic token classes). | **87.0% field accuracy**, 0.55s per document on RTX 5070 Ti. |
-| **Arabic & GCC PII Protection** | Deterministic regex & contextual heuristics for Saudi 10-digit IDs (`1XXXXXXXXX` / `2XXXXXXXXX`), GCC phones, and Arabic names. | **100% precision** on Saudi ID patterns with zero external cloud API dependencies. |
+| **Arabic & GCC PII Protection** | Deterministic regex & contextual heuristics for Yemen 10-digit IDs (`1XXXXXXXXX` / `2XXXXXXXXX`), GCC phones, and Arabic names. | **100% precision** on Yemen ID patterns with zero external cloud API dependencies. |
 | **Cross-Lingual Entity Extraction** | `xlm-roberta-base` trained jointly on multilingual clinical datasets with zero-shot transfer evaluation. | **F1 0.77 (EN) / 0.52 (FR)** with domain transfer evaluation. |
 | **Tri-Mode Redaction Strategy** | Deterministic substitution: **Strict** (`[محجوب]`), **Typed** (`[هوية_وطنية]`), and **Surrogate** (realistic synthetic entities). | Preserves **75%–77%** downstream utility for clinical analytics post-redaction. |
 | **Production Serving** | Async FastAPI microservices with OpenAPI / Swagger UI + Streamlit web frontend. | Fully decoupled, containerizable, and microservice-ready. |
@@ -86,7 +86,7 @@ flowchart TD
     end
 
     subgraph PrivacyEngine ["🔒 Privacy & Anonymization Engine"]
-        PII_Ar["🇸🇦 Arabic PII Scanner<br/>(Saudi National ID / Iqama / GCC Phones / MRN)"]
+        PII_Ar["🇸🇦 Arabic PII Scanner<br/>(Yemen National ID / Iqama / GCC Phones / MRN)"]
         PII_Multi["🌐 Multilingual PII Scanner<br/>(SSN / Emails / Addresses / Dates)"]
         Redactor["🛡️ Multi-Mode Redaction Core<br/>Strict [محجوب] · Typed [TAG] · Surrogate [Fake]"]
         
@@ -268,7 +268,7 @@ DocuShield-AI/
 │   │   ├── evaluate_ner.py                 # Cross-lingual zero-shot comparison metrics
 │   │   └── train_ner.py                    # XLM-RoBERTa joint fine-tuning
 │   └── problem3_privacy/                   # Privacy, PII detection, and redaction
-│       ├── arabic_pii.py                   # Arabic, Saudi National ID & GCC phone patterns
+│       ├── arabic_pii.py                   # Arabic, Yemen National ID & GCC phone patterns
 │       ├── pii_detectors.py                # Unified multilingual PII detection scanner
 │       └── redaction.py                    # Strict, Typed, and Surrogate redaction engines
 ├── tests/
@@ -299,7 +299,7 @@ Copyright (c) 2026 Mohammed AL-Haj (https://github.com/alhaj-ai)
 ```
 
 *Engineered by **Mohammed AL-Haj**.*  
-*Extended with Arabic NLP capabilities, Saudi PDPL compliance, FastAPI microservices, and Streamlit interactive interfaces based on open multimodal document intelligence research.*
+*Extended with Arabic NLP capabilities, Yemen PDPL compliance, FastAPI microservices, and Streamlit interactive interfaces based on open multimodal document intelligence research.*
 
 ---
 
